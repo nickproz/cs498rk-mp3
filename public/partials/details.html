@@ -1,0 +1,41 @@
+<div #id="details">
+
+	<!-- {{movieData[myRank-1]}} -->
+	<div class="row">
+		<div class="small-6 small-centered columns detailsContainer">
+			<h1 style="margin: 20px; text-align:center"> IMDB Top 250 Movie Directory </h1>
+			<div class="buttons">
+				<a href="#/gallery" class="button"> Gallery </a>
+				<a href="#/list" class="button"> List </a>
+			</div>
+			
+			<div class="arrows">
+				<a href="#/details/{{myRank - 1}}" ng-click="navWrapLeft()"> <i class="fa fa-arrow-left"></i> </a>
+				<a href="#/details/{{myRank - 1 + 2}}" ng-click="navWrapRight()"> <i style="float:right" class="fa fa-arrow-right"></i> </a>
+			</div>
+			
+			<div class="detailsImage">
+				<img ng-src="./data/images/{{movieData[myRank-1].imdbID}}.jpg" />
+			</div>
+			
+			<div class="detailsText"> 
+				<h4> {{movieData[myRank-1].title}} </h4>
+				<br> 
+				Rank: {{movieData[myRank-1].rank}} 
+				<br> 
+				IMDB Rating: {{movieData[myRank-1].imdbRating}}
+				<br>
+				Rated: {{movieData[myRank-1].rated}}
+				<br>
+				Runtime: {{movieData[myRank-1].runtime}}
+				<br>
+				Released: {{movieData[myRank-1].released}}
+				<br>
+				Awards: {{movieData[myRank-1].awards}}
+				<br>
+				Plot: {{movieData[myRank-1].plot}}
+			</div>
+		</div>
+	</div>
+
+</div>
