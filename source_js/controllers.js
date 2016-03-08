@@ -43,7 +43,7 @@ app.controller('mainController', ['$scope', '$http', '$routeParams', function($s
 	}
 	
 	$scope.selectedGenre = "All";
-	$scope.genres = ['All', 'Action', 'Crime', 'Comedy', 'Drama', 'Musical', 'Mystery', 'Romance', 'Sci-Fi', 'Thriller', 'Western'];
+	$scope.genres = ['All', 'Action', 'Biography', 'Crime', 'Comedy', 'Drama', 'Family', 'Fantasy', 'History', 'Musical', 'Mystery', 'Romance', 'Sci-Fi', 'Thriller', 'War', 'Western'];
 	
 	$scope.filterByGenres = function(movie) {
 		if ($scope.selectedGenre == "All")
