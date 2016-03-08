@@ -3,23 +3,22 @@
 /* LIST */
 .options
 {
-	margin: 0 auto;
 	background:#99ffff;
 	padding:20px;
-	text-align:center;
 	width:60%;
+	
+	@include center();
 }
 
 #list table
 {
 	width:60%;
-	margin: 0 auto;
-	text-align:center;
+	@include center();
 }
 
 #list table td, .options
 {
-	border: 1px solid #404040;
+	border: 1px solid $offBlack;
 }
 
 #list h1
@@ -58,8 +57,7 @@
 
 #gallery h1
 {
-	text-align:center;
-	margin: 0 auto;
+	@include center();
 }
 
 .genres
@@ -71,14 +69,12 @@
 
 .detailsImage
 {
-	text-align:center;
-	margin:0px 0px auto;
+	@include center();
 }
 
 .detailsText
 {
-	margin: 0 auto;
-	text-align:center;
+	@include center();
 }
 
 .detailsContainer
@@ -96,8 +92,7 @@
 
 .buttons
 {
-	text-align:center;
-	margin: 0 auto;
+	@include center();
 }
 
 /* LIBRARY FIXES */

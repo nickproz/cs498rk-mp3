@@ -1,0 +1,7 @@
+Fix last gallery picture spacing
+Add redirect for movie ranks outside of 0-250?
+Active button classes for gallery and list buttons
+Angular to generate genre buttons instead of hardcoding
+Add comments to everything
+Better responsiveness
+Styling and fonts
