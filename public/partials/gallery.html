@@ -1,17 +1,11 @@
 <div id="gallery">
 
 	<div class="row">
-		<h1 style="margin: 20px"> IMDB Top 250 Movie Directory </h1>
-			<div class="buttons">
-				<a href="#/gallery" class="button"> Gallery </a>
-				<a href="#/list" class="button"> List </a>
+		<div class="buttons">
+			<div ng-repeat="genre in genres" class="genres">
+				<a class="button" ng-class="{active: $index===selectedIndex}" ng-click="updateGenre(genre, $index)" > {{genre}} </a>
 			</div>
-			<br>
-			<div class="buttons">
-				<div ng-repeat="genre in genres" class="genres">
-					<a class="button" ng-class="{active: $index===selectedIndex}" ng-click="updateGenre(genre, $index)" > {{genre}} </a>
-				</div>
-			</div>
+		</div>
 		<br>
 		<div class="small-7 small-centered columns" ng-repeat="movie in movieData | filter:filterByGenres">
 			<a href="#/details/{{movie.rank}}"> <img class="listPics hvr-float" ng-src="./data/images/{{movie.imdbID}}.jpg" /> </a>

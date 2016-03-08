@@ -1,12 +1,6 @@
 <div id="list">
 
 	<div class="options">
-			<h1> IMDB Top 250 Movie Directory </h1>
-			<div class="buttons">
-				<a href="#/gallery" class="button"> Gallery </a>
-				<a href="#/list" class="button"> List </a>
-			</div>
-			</br>
 			Search: <input id="input" placeholder="Search for a movie..." ng-model="query[drop.down]" />
 			</br>
 			Sort by: <select id="dropDown" ng-model="drop.down" ng-options="option.value as option.name for option in dropdowns" ng-change="clear()"> </select>
