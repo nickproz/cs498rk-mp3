@@ -3,8 +3,11 @@
 	<div class="options">
 			Search: <input id="input" placeholder="Search for a movie..." ng-model="query[drop.down]" />
 			</br>
-			Sort by: <select id="dropDown" ng-model="drop.down" ng-options="option.value as option.name for option in dropdowns" ng-change="clear()"> </select>
+			Sort by: <select id="dropDown" ng-model="drop.down" ng-options="option.value as option.name for option in dropdowns"> </select>
 			</br>
+			<div class="buttons">
+				<a class="button" ng-click="clear()" > Clear Search </a>
+			</div>
 			<input type="radio" name="Ascending" value="0" ng-checked="true" ng-model="direction.direc" ng-change="sortReverse = 0"> Ascending
 			<input type="radio" name="Descending" value="1" ng-model="direction.direc" ng-change="sortReverse = 1"> Descending
 	</div>
